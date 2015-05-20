@@ -36,5 +36,22 @@ public class Circle {
 		return color;
 	}
 	
+													//Setter Methods begin
+	
+	public void setColor(String color){
+		this.color = color;
+	}
+	
+	public void setRadius(double radius){
+		this.radius = radius;
+	}
+	
+													//Setter Methods End
+	
+	public String toString(){
+		return "Circle with radius = "+radius+" and color of "+color;
+	}
+	
+	
 	
 }

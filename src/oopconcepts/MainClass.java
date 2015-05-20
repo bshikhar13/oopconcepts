@@ -16,5 +16,7 @@ public class MainClass {
 		System.out.println(c3.getRadius());
 		
 		//c2.radius = 
+		System.out.println(c2);
 	}
+	
 }

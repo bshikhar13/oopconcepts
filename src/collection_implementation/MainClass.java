@@ -16,7 +16,9 @@ public class MainClass {
 		al.add("ravi");
 		al.add("Darshan");
 		
-		Iterator itr = al.iterator();						//Iterator Created
+		ListIterator<String> itr = al.listIterator();						//Iterator Created
+		
+		System.out.println("Accessing ArrayList in Forward Direction using While Loop\n");
 		
 		while(itr.hasNext()){								//iterating using While
 			System.out.println(itr.next());
@@ -24,9 +26,23 @@ public class MainClass {
 		
 		System.out.println("\n\n\n");
 		
+
+		System.out.println("Accessing ArrayList in Forward Direction using For Loop\n");
+		
+		
 		for(String obj:al){									//iterating using For loop
 			System.out.println(obj);
 		}
+		
+		System.out.println("\n\n\nAccessing Arraylist in Backward Direction using while Loop\n");
+		
+		while(itr.hasPrevious()){
+			System.out.println(itr.previous());
+		}
+															
+		al.add(4, "Wild card Entry");						//Adding data at a certain index
+		
+		System.out.println(al.get(4));						//Accessing element of a certain Index
 		
 															//Creating ArrayList of objects of class Student
 		
@@ -40,6 +56,7 @@ public class MainClass {
 		
 		ArrayList<Student> st1 = new ArrayList<Student>();
 		
+		
 		st1.add(vikram);
 		st1.add(rahul);
 		st1.add(ravip);
@@ -50,6 +67,8 @@ public class MainClass {
 		
 		Iterator itr1 = st1.iterator();
 		
+		
+		
 		while(itr1.hasNext()){
 			Student temp = (Student)itr1.next();
 			System.out.println(temp.rollno+"  "+temp.name+"  "+temp.age);
@@ -57,8 +76,27 @@ public class MainClass {
 		
 		//ArrayList implementation Ends
 		
+		//LinkedList implementation Starts
+		
+		LinkedList<Student> studentLinkedList1 = new LinkedList<Student>();
+		
+		studentLinkedList1.add(vikram);
+		studentLinkedList1.add(ojas);
+		studentLinkedList1.add(rahul);
+		studentLinkedList1.add(shikhar);
+		studentLinkedList1.add(ravip);
+		studentLinkedList1.add(ravis);
+		studentLinkedList1.add(darshan);
+		
+		Iterator<Student> itr2 = studentLinkedList1.iterator();
+		
+		while(itr2.hasNext()){
+			Student temp = itr2.next();
+			System.out.println(temp.rollno+"  "+temp.name+"  "+temp.age);
+		}
 		
 		
+		//LinkedList implementation Ends
 		
 		
 	}

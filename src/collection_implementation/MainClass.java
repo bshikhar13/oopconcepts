@@ -146,6 +146,30 @@ public class MainClass {
 		}
 		
 		//LinkedHashSet implementation Ends
+		//TreeSet implementation Begins
+		
+		TreeSet<String> treeSetStudent = new TreeSet<String>();
+		
+		treeSetStudent.add("ojas");
+		treeSetStudent.add("rahul");
+		treeSetStudent.add("shikhar");
+		treeSetStudent.add("darshan");
+		treeSetStudent.add("darshan");
+		treeSetStudent.add("darshan");
+		treeSetStudent.add("ravis");
+		treeSetStudent.add("rahul");
+		
+		Iterator<String> treeSetStudentIterator = treeSetStudent.iterator();
+		
+		System.out.println("\n\nPrinting TreeSet for Students\n\n");
+		
+		while (treeSetStudentIterator.hasNext()) {
+			
+			System.out.println(treeSetStudentIterator.next());
+			
+		}
+		
+		//TreeSet implementation Ends
 		
 	}
 }

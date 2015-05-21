@@ -97,7 +97,30 @@ public class MainClass {
 		
 		
 		//LinkedList implementation Ends
+		//hashSet implementation begins
 		
+		HashSet<Student> studentHashSet  = new HashSet<Student>();
+		studentHashSet.add(ojas);
+		studentHashSet.add(rahul);
+		studentHashSet.add(shikhar);
+		studentHashSet.add(darshan);
+		studentHashSet.add(darshan);
+		studentHashSet.add(darshan);
+		studentHashSet.add(ravis);
+		studentHashSet.add(rahul);
 		
+		Iterator<Student> hashSetIterator = studentHashSet.iterator();
+		
+		System.out.println("\n\nPrinting HashSet for Students\n\n");
+		
+		while (hashSetIterator.hasNext()) {
+			
+			Student temp = hashSetIterator.next();
+			System.out.println(temp.rollno+"   "+temp.name);
+			
+		}
+		
+		//HashSet implementation Ends
+	
 	}
 }

@@ -217,6 +217,20 @@ public class MainClass {
 		}
 		
 		//PriorityQueue Implementation Ends
+		//Hashmap Implementation Starts
 		
+		HashMap<Integer, String> studentRollIndex = new HashMap<Integer, String>();
+		
+		studentRollIndex.put(1200132, "Shikhar Bansal");
+		studentRollIndex.put(1200135, "Darshan tejani");
+		studentRollIndex.put(1200123, "Vikram patel");
+		
+		System.out.println("\nPrinting HashMap for Students\n");
+		
+		for(Map.Entry m:studentRollIndex.entrySet()){
+			System.out.println(m.getKey()+" "+m.getValue());
+		}
+		
+		//HashMap implementation ends 
 	}
 }

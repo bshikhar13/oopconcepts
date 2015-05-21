@@ -1,5 +1,8 @@
 package oopconcepts;
 
+import javax.swing.JOptionPane;
+
+
 public class MainClass {
 	
 	public static void main(String[] args){
@@ -14,6 +17,10 @@ public class MainClass {
 		
 		System.out.println(c3.getArea());
 		System.out.println(c3.getRadius());
+		
+		JOptionPane.showMessageDialog(null, c3);
+		JOptionPane.showMessageDialog(null, c2);
+		JOptionPane.showMessageDialog(null, c1,"This is an alert",JOptionPane.INFORMATION_MESSAGE);
 		
 		//c2.radius = 
 		System.out.println(c2);

@@ -170,6 +170,53 @@ public class MainClass {
 		}
 		
 		//TreeSet implementation Ends
+		//PriorityQueue Implementation Begins
+		
+		PriorityQueue<String> priorityQueueStudent = new PriorityQueue<String>();
+		
+		priorityQueueStudent.add("vikram");
+		priorityQueueStudent.add("ojas");
+		priorityQueueStudent.add("darshan");
+		priorityQueueStudent.add("shikhar");
+		priorityQueueStudent.add("ravis");
+		priorityQueueStudent.add("ravip");
+		priorityQueueStudent.add("vikram");
+		
+		Iterator<String> priorityQueueStudentIterator = priorityQueueStudent.iterator();
+		
+		System.out.println("\n\nPrinting Priority Queus for Students");
+		
+		while(priorityQueueStudentIterator.hasNext()){
+			
+			System.out.println(priorityQueueStudentIterator.next());
+			
+		}
+		
+
+		System.out.println("head:"+priorityQueueStudent.element());  
+		System.out.println("head:"+priorityQueueStudent.peek());
+		
+		priorityQueueStudent.remove();
+		priorityQueueStudent.remove();
+		priorityQueueStudent.remove();
+		priorityQueueStudent.remove();
+		priorityQueueStudent.remove();
+		
+		priorityQueueStudent.add("Zakhira");
+		priorityQueueStudent.add("ravip");
+		
+		
+		Iterator<String> priorityQueueStudentIterator1 = priorityQueueStudent.iterator();
+		
+		System.out.println("\nPrinting Priority Queue after removing an element\n");
+		
+		while(priorityQueueStudentIterator1.hasNext()){
+			
+			System.out.println(priorityQueueStudentIterator1.next());
+			
+		}
+		
+		//PriorityQueue Implementation Ends
 		
 	}
 }

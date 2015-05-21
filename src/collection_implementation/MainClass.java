@@ -121,6 +121,31 @@ public class MainClass {
 		}
 		
 		//HashSet implementation Ends
-	
+		//LinkedHashSet implementation  Starts
+		
+		LinkedHashSet<Student> linkedStudentHashSet = new LinkedHashSet<Student>();
+		
+		linkedStudentHashSet.add(ojas);
+		linkedStudentHashSet.add(rahul);
+		linkedStudentHashSet.add(shikhar);
+		linkedStudentHashSet.add(darshan);
+		linkedStudentHashSet.add(darshan);
+		linkedStudentHashSet.add(darshan);
+		linkedStudentHashSet.add(ravis);
+		linkedStudentHashSet.add(rahul);
+		
+		Iterator<Student> linkedStudentHashSetIterator = linkedStudentHashSet.iterator();
+		
+		System.out.println("\n\nPrinting LinkedHashSet for Students\n\n");
+		
+		while (linkedStudentHashSetIterator.hasNext()) {
+			
+			Student temp = linkedStudentHashSetIterator.next();
+			System.out.println(temp.rollno+"   "+temp.name);
+			
+		}
+		
+		//LinkedHashSet implementation Ends
+		
 	}
 }
